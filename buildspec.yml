@@ -6,7 +6,7 @@ phases:
       nodejs: latest
     commands:
       - echo Installing dependencies...
-      - npm install -g http-server
+      - npm install -g http-server nginx
   pre_build:
     commands:
       - echo Pre-build phase started
