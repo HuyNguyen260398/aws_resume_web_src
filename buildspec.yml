@@ -1,0 +1,23 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      nodejs: latest
+    commands:
+      - echo Installing dependencies...
+      - npm install -g http-server
+  pre_build:
+    commands:
+      - echo Pre-build phase started
+  build:
+    commands:
+      - echo Build phase started
+      # Add any build commands here if needed
+  post_build:
+    commands:
+      - echo Build completed
+artifacts:
+  files:
+    - '**/*'
+  base-directory: .
